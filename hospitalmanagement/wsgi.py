@@ -1,5 +1,5 @@
 """
-WSGI config for hospitalmanagement project.
+WSGI config for wellnessmanagement project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

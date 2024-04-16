@@ -21,14 +21,11 @@
     }
   </style>
 </head>
-<!--
-written By : sumit kumar
-facebook : fb.com/sumit.luv
--->
+
 <div class="container">
   <div class="panel panel-primary">
     <div class="panel-heading">
-      <h6 class="panel-title">Your Discharged Patient List</h6>
+      <h6 class="panel-title">Students Attended To List</h6>
     </div>
     <table class="table table-hover" id="dev-table">
       <thead>
@@ -37,9 +34,9 @@ facebook : fb.com/sumit.luv
 
           <th>Admit Date</th>
           <th>Release Date</th>
-          <th>Symptoms</th>
-          <th>Mobile</th>
-          <th>Address</th>
+          <th>Complaints/ Issues</th>
+          <th>Email</th>
+          <!-- <th>Address</th> -->
 
         </tr>
       </thead>
@@ -50,16 +47,11 @@ facebook : fb.com/sumit.luv
         <td>{{p.releaseDate}}</td>
         <td>{{p.symptoms}}</td>
         <td>{{p.mobile}}</td>
-        <td>{{p.address}}</td>
+        <!-- <td>{{p.address}}</td> -->
       </tr>
       {% endfor %}
     </table>
   </div>
 </div>
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
 
 {% endblock content %}

@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>LazyCoder || sumit</title>
+  <title>Student Wellness Nexus</title>
   <style type="text/css">
     body {
       color: #aa082e;
@@ -21,7 +21,7 @@
     .note {
       text-align: center;
       height: 80px;
-      background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+      background: -webkit-linear-gradient(left, #00d9a5, #00d9a5);
       color: #fff;
       font-weight: bold;
       line-height: 80px;
@@ -43,7 +43,7 @@
       padding: 1%;
       width: 20%;
       cursor: pointer;
-      background: #0062cc;
+      background: #00d9a5;
       color: #fff;
     }
   </style>
@@ -61,13 +61,13 @@
 
 
 
-  <!--- signup page for patient by admin(sumit)  ---------->
+  <!--- signup page for student by admin(sumit)  ---------->
   <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="container register-form">
       <div class="form">
         <div class="note">
-          <p>Register to Hospital</p>
+          <p>Register to Wellness Nexus</p>
         </div>
 
         <div class="form-content">
@@ -83,7 +83,7 @@
                 {% render_field patientForm.address class="form-control" placeholder="Address" %}
               </div>
               <div class="form-group">
-                {% render_field patientForm.symptoms class="form-control" placeholder="Symptoms" %}
+                {% render_field patientForm.symptoms class="form-control" placeholder="Complaints/ Issues" %}
               </div>
               <div class="form-group">
                 {% render_field patientForm.profile_pic required="required" class="form-control" placeholder="Profile Picture" %}
@@ -100,7 +100,7 @@
                 {% render_field patientForm.mobile class="form-control" pattern="[6789][0-9]{9}" placeholder="Mobile Number" %}
               </div>
               <div class="form-group">
-                {% render_field patientForm.assignedDoctorId class="form-control" placeholder="Doctor" %}
+                {% render_field patientForm.assignedDoctorId class="form-control" placeholder="Counsellor" %}
               </div>
 
             </div>
@@ -115,10 +115,5 @@
 
   {% include "hospital/footer.html" %}
 </body>
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
 
 </html>
